@@ -1,0 +1,46 @@
+functions:
+- id: http-request
+  image: gcr.io/direktiv/functions/http-request:1.0
+  type: knative-workflow
+
+states:
+- id: restore
+  type: getter
+  variables:
+  - key: btc
+    scope: workflow
+  transition: get-price
+
+- id: get-price
+  type: action
+  action:
+    function: http-request
+    input: 
+      url: 'https://blockchain.info/ticker'
+  transform:
+    btc: jq(.return[0].result.USD.last)
+    old: jq(.var.btc)
+  transition: store
+  
+- id: store
+  type: setter
+  variables:
+  - key: btc
+    scope: workflow
+    mimeType: text/plain
+    value:  jq(.btc)
+  transition: result
+
+- id: result
+  type: noop
+  transform:
+    btc: jq(.btc)
+    move: |
+      js(
+        if (data["old"] > data["btc"]) {
+          return "down"
+        } else if (data["old"] < data["btc"]) {
+          return "up"
+        }
+        return "same"
+      )
