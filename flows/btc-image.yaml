@@ -1,0 +1,38 @@
+direktiv_api: workflow/v1
+
+functions:
+- id: image-magick
+  image: gcr.io/direktiv/functions/image-magick:1.0
+  type: knative-workflow
+# - id: call-btc
+#   workflow: get-bc.yaml
+#   type: subflow
+  
+states:
+# - id: subflow
+#   type: action
+#   action:
+#     function: call-btc
+ 
+- id: noop
+  type: noop
+  transform:
+    return:
+      btc: 34591.97,
+      move: up
+  transition: draw
+
+- id: draw
+  type: action
+  action:
+    function: image-magick
+    files:
+    - key: /flows/happy.png
+      scope: file
+      as: happy.png
+    input: 
+      commands:
+      # - command: ls -la 
+      # - command: cp happy.png out/workflow/resized.png 
+      # - command: apt-get install --only-upgrade imagemagick
+      - command: convert happy.png -gravity North -pointsize 30 -annotate +0+100 'HELLO'  out/workflow/resized.png 
