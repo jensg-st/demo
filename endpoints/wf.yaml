@@ -1,0 +1,8 @@
+
+direktiv_api: endpoint/v1
+method: GET
+plugins: 
+  - type: target_workflow
+    configuration:
+      namespace: gateway_namespace
+      workflow: flows/get-btc.yaml

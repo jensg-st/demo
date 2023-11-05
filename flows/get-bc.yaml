@@ -1,8 +1,8 @@
 direktiv_api: workflow/v1
 functions:
 - id: http-request
-  image: gcr.io/direktiv/functions/http-request:1.0
-  type: knative-workflow
+  service: /services/http-service.yaml
+  type: knative-namespace
 
 states:
 - id: restore
@@ -19,7 +19,7 @@ states:
     input: 
       url: 'https://blockchain.info/ticker'
   transform:
-    btc: jq(.return[0].reswult.USD.last)
+    btc: jq(.return[0].result.USD.last)
     old: jq(.var.btc)
   transition: store
   
