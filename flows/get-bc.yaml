@@ -1,7 +1,7 @@
 direktiv_api: workflow/v1
 functions:
 - id: http-request
-  service: /services/http-service.yaml
+  service: /services/http.yaml
   type: knative-namespace
 
 states:
