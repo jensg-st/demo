@@ -20,7 +20,7 @@ states:
       url: 'https://blockchain.info/ticker'
   transform:
     btc: jq(.return[0].result.USD.last)
-    old: jq(.var.btc)
+    old: jq(.var.btc // 0)
   transition: store
   
 - id: store

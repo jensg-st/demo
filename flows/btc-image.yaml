@@ -23,6 +23,12 @@ states:
     - key: /flows/up.png
       scope: file
       as: up.png
+    - key: /flows/same.png
+      scope: file
+      as: same.png
+    - key: /flows/down.png
+      scope: file
+      as: down.png
     input: 
       commands:
       - command: convert jq(.return.move).png -gravity North -pointsize 30 -annotate +0+100 'jq(.return.btc)'  out/workflow/btc.png 

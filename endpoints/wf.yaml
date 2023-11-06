@@ -1,7 +1,7 @@
-# direktiv_api: endpoint/v1
-# method: GET
-# plugins: 
-#   - type: target_workflow
-#     configuration:
-#       namespace: gateway_namespace
-#       workflow: flows/get-btc.yaml
+direktiv_api: "endpoint/v1"
+plugins:
+  - type: "target_workflow"
+    configuration:
+      namespace: "gateway_namespace"
+      workflow: "flows/get-bc.yaml"
+method: "GET"
