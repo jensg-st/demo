@@ -1,0 +1,7 @@
+direktiv_api: "endpoint/v1"
+plugins:
+  - type: "target_namespace_var"
+    configuration:
+      namespace: "gateway_namespace"
+      variable: "btc.png"
+method: "GET"
