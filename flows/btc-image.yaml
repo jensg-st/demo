@@ -31,6 +31,6 @@ states:
       as: down.png
     input: 
       commands:
-      - command: convert jq(.return.move).png -gravity North -pointsize 30 -annotate +0+100 'jq(.return.btc)'  out/workflow/btc.png 
+      - command: convert jq(.return.move).png -gravity North -pointsize 30 -annotate +0+100 'jq(.return.btc)'  out/namespace/btc.png 
 
 
