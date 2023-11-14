@@ -5,4 +5,5 @@ plugins:
     configuration:
       namespace: "gateway_namespace"
       workflow: "flows/get-bc.yaml"
-method: "GET"
+methods: 
+  - GET
