@@ -1,8 +1,8 @@
 direktiv_api: "endpoint/v1"
-path-extension: /{id}
+path-extension: /add/{id}
 plugins:
-  - type: "target_namespace_var"
+  - type: "target_workflow"
     configuration:
       namespace: "gateway_namespace"
-      variable: "btc.png"
+      workflow: "flows/get-bc.yaml"
 method: "GET"
