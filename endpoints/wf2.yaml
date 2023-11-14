@@ -1,5 +1,5 @@
 direktiv_api: "endpoint/v1"
-path-extension: /add/{id}
+path-extension: add/{id}
 plugins:
   - type: "target_workflow"
     configuration:
