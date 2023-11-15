@@ -7,4 +7,5 @@ plugins:
       variable: "btc.png"
 methods: 
   - GET
-  
+
+

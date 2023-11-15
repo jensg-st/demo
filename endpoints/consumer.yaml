@@ -1,0 +1,9 @@
+direktiv_api: "consumer/v1"
+username: user123
+basic-auth: hello
+apikey: jens
+tags:
+- tag1
+groups:
+- group1
+  
