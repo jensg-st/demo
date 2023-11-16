@@ -1,7 +1,7 @@
 direktiv_api: "consumer/v1"
 username: user123
-basic-auth: hello
-apikey: jens
+password: hello
+api_key: jens
 tags:
 - tag1
 groups:
