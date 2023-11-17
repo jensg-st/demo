@@ -1,5 +1,6 @@
 direktiv_api: "endpoint/v1"
 
+path_extension: /do/{id}
 # allow_anonymous: true
 
 plugins:
