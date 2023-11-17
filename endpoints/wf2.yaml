@@ -1,9 +1,0 @@
-direktiv_api: "endpoint/v1"
-path-extension: add/{id}
-plugins:
-  - type: "target_workflow"
-    configuration:
-      namespace: "gateway_namespace"
-      workflow: "flows/get-bc.yaml"
-methods: 
-  - GET

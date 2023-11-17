@@ -1,6 +1,11 @@
 direktiv_api: "endpoint/v1"
+
+# path_extension: /{id}
+# allow_anonymous: true
+
 plugins:
   - type: "basic-auth"
+  - type: "key-auth"
   # configuration:
   #   namespace: "gateway_namespace"
   #   workflow: "flows/get-bc.yaml"
