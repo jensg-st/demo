@@ -4,8 +4,7 @@ path_extension: /do/{id}
 # allow_anonymous: true
 
 plugins:
-  - type: "basic-auth"
-  - type: "key-auth"
+  - type: request-convert
   # configuration:
   #   namespace: "gateway_namespace"
   #   workflow: "flows/get-bc.yaml"
