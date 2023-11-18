@@ -4,7 +4,10 @@ path_extension: /do/{id}
 allow_anonymous: true
 
 plugins:
-  - type: request-convert
+  - type: instant-response
+    configuration: 
+      status_code: 200
+      status_message: hello
   # configuration:
   #   namespace: "gateway_namespace"
   #   workflow: "flows/get-bc.yaml"
