@@ -1,7 +1,7 @@
 direktiv_api: "endpoint/v1"
 
 path_extension: /do/{id}
-# allow_anonymous: true
+allow_anonymous: true
 
 plugins:
   - type: request-convert
