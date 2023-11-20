@@ -3,3 +3,5 @@ states:
 - id: helloworld
   type: noop
   log: jq(.)
+  transform:
+    data: jq(.)
