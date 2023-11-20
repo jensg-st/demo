@@ -5,8 +5,7 @@ allow_anonymous: true
 
 plugins:
   - type: target-flow
-    configuration:
-      flow: /test.yaml
+
   # - type: instant-response
   #   configuration: 
   #     status_code: 200
