@@ -6,7 +6,7 @@ allow_anonymous: true
 plugins:
   - type: target-namespace-var
     configuration:
-      variable: ddddd
+      variable: ddddds
   # - type: instant-response
   #   configuration: 
   #     status_code: 200
