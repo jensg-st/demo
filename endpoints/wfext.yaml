@@ -7,7 +7,7 @@ plugins:
   - type: target-flow-var
     configuration:
       flow: /test.yaml
-      variable: jens
+      variable: image
   # - type: instant-response
   #   configuration: 
   #     status_code: 200
