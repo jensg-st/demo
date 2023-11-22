@@ -9,7 +9,9 @@ plugins:
     configuration:  
       flow: test.yaml
   # - type: "basic-auth"
-  # - type: "key-auth"
+  - type: "key-auth"
+    configuration:
+       key_name: jens
   # configuration:
   #   namespace: "gateway_namespace"
   #   workflow: "flows/get-bc.yaml"
