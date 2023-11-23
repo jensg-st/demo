@@ -1,5 +1,5 @@
 direktiv_api: "endpoint/v1"
-allow_anonymous: true
+allow_anonymous: false  
 
 path_extension: /{id}
 
@@ -19,6 +19,19 @@ plugins:
   #   configuration:
   #     namespace: "gateway_namespace"
   #     workflow: "flows/get-bc.yaml"
+# =======
+#   - type: key-auth
+#     configuration:
+#        key_name: jens
+#   - type: request-convert
+#   - type: acl
+#     configuration:
+#       deny_groups: 
+#       - group1
+#   - type: target-flow
+#     configuration:  
+#       flow: test.yaml
+# >>>>>>> 0e4bb6857fca101e531650b32a0aee3c60841164
 methods: 
   - GET
   - POST
