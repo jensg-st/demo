@@ -5,7 +5,7 @@ path_extension: /{id}
 
 plugins:
   target:
-  - type: instant-response
+    type: instant-response
   # - type: request-convert
   # - type: target-flow
   #   configuration:  
