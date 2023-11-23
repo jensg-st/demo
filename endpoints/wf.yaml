@@ -4,10 +4,12 @@ allow_anonymous: true
 path_extension: /{id}
 
 plugins:
-  - type: request-convert
-  - type: target-flow
-    configuration:  
-      flow: test.yaml
+  target:
+  - type: instant-response
+  # - type: request-convert
+  # - type: target-flow
+  #   configuration:  
+  #     flow: test.yaml
   # - type: "basic-auth"
   # - type: "key-auth"
   # configuration:
