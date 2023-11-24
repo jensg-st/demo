@@ -5,7 +5,9 @@ path_extension: /{id}
 
 plugins:
   target:
-    type: instant-response
+    type: target-namespace-file
+    configuration:  
+      file: /flows/up.png
   # - type: request-convert
   # - type: target-flow
   #   configuration:  
