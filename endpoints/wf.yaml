@@ -5,9 +5,9 @@ path_extension: /{id}
 
 plugins:
   target:
-    type: target-namespace-var
+    type: target-flow
     configuration:  
-      variable: ddddd
+      flow: /test.yaml
   # - type: request-convert
   # - type: target-flow
   #   configuration:  
