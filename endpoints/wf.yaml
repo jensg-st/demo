@@ -7,7 +7,7 @@ plugins:
   target:
     type: target-namespace-file
     configuration:  
-      file: /flows/up.png
+      variable: ddddd
   # - type: request-convert
   # - type: target-flow
   #   configuration:  
