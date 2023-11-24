@@ -1,23 +1,17 @@
-# direktiv_api: "endpoint/v1"
-
-# path_extension: /do/{id}
-# allow_anonymous: true
-
-# plugins:
-#   - type: target-namespace-file
-#     configuration:
-#       file: /flows/up.png
-#   # - type: instant-response
-#   #   configuration: 
-#   #     status_code: 200
-#   #     status_message: hello
-#   # configuration:
-#   #   namespace: "gateway_namespace"
-#   #   workflow: "flows/get-bc.yaml"
-#   # - type: "target_workflow"
-#   #   configuration:
-#   #     namespace: "gateway_namespace"
-#   #     workflow: "flows/get-bc.yaml"
-# methods: 
-#   - GET
-#   - POST
+direktiv_api: endpoint/v1
+allow_anonymous: true
+timeout: 2
+plugins:
+  outbound:
+    - type: js-outbound
+      configuration:
+       script: |
+          sleep(5)
+    - type: js-outbound
+      configuration:
+        script: |
+          log(input)
+          input["Headers"].Add("demo3", "value3")
+methods: 
+  - GET
+  - POST`
