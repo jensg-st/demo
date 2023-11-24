@@ -5,7 +5,7 @@ path_extension: /{id}
 
 plugins:
   target:
-    type: target-namespace-file
+    type: target-namespace-var
     configuration:  
       variable: ddddd
   # - type: request-convert
