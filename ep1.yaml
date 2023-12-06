@@ -3,8 +3,6 @@ allow_anonymous: true
 plugins:
   target:
     type: target-flow
-    configuration:
-        flow: /test.yaml
 methods: 
 - GET
 path: /endpoint1
