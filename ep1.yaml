@@ -5,6 +5,7 @@ plugins:
     type: target-flow
     configuration:
         flow: /test.yaml
+        async: true
 methods: 
 - GET
 path: /endpoint1
