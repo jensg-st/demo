@@ -1,4 +1,0 @@
-direktiv_api: "service/v1"
-scale: 1
-size: "medium"
-image: "gcr.io/direktiv/functions/http-request:1.0"

@@ -1,9 +1,0 @@
-direktiv_api: "consumer/v1"
-username: user123
-password: hello
-api_key: mykey
-tags:
-- tag1
-groups:
-- group1
-  
