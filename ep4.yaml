@@ -3,6 +3,9 @@ allow_anonymous: true
 plugins:
   outbound:
   - type: js-outbound
+    configuration:
+      script: 
+  asdasdsa
 methods: 
   - GET
 path: ep4
