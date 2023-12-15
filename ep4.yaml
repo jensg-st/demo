@@ -6,8 +6,6 @@ plugins:
     namespace: test
     configuration:
         flow: /test.yaml
-        namespace: test
-        async: true
 methods: 
   - GET
 path: ep4
