@@ -10,6 +10,7 @@ plugins:
     namespace: test
     configuration:
         flow: /test.yaml
+        async: true
 methods:
   - POST
 path: ep1
