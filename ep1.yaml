@@ -5,4 +5,4 @@ plugins:
     type: target-flow-var
 methods: 
   - GET
-path: ep3
+path: ep1
