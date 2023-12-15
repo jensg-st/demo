@@ -9,4 +9,4 @@ plugins:
         namespace: test
 methods: 
   - GET
-path: ep4
+path: ep2
