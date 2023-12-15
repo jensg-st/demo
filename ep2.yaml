@@ -2,10 +2,11 @@ direktiv_api: endpoint/v1
 allow_anonymous: true
 plugins:
   target:
-    type: target-flow-var
+    type: target-flow
+    namespace: test
     configuration:
         flow: /test.yaml
-        variable: hello
+        namespace: test
 methods: 
-- GET
-path: /endpoint2
+  - GET
+path: ep4
