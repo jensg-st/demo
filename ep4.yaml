@@ -6,6 +6,7 @@ plugins:
     namespace: test
     configuration:
         flow: /test.yaml
+        namespace: demo
 methods: 
   - GET
 path: ep4
