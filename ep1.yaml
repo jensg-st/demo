@@ -4,7 +4,7 @@ plugins:
   inbound:
     - type: github-event
       configuration: 
-        secret: helloworld1
+        secret: helloworld
   target:
     type: target-flow
     namespace: test
