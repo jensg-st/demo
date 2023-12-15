@@ -6,6 +6,6 @@ plugins:
     namespace: test
     configuration:
         flow: /test.yaml
-methods: 
-  - GET
+methods:
+  - POST
 path: ep1
