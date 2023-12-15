@@ -9,7 +9,7 @@ plugins:
     configuration:
         flow: /test.yaml
 methods: 
-  - OPTION
+  - OPTIONS
   - HEAD
   - GET
-path: ep2
+path: ep2/{id}
