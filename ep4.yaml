@@ -6,7 +6,7 @@ plugins:
     namespace: test
     configuration:
         flow: /test.yaml
-        namespace: demo
+        namespace: test
         async: true
 methods: 
   - GET
