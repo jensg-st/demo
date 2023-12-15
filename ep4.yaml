@@ -1,11 +1,11 @@
 direktiv_api: endpoint/v1
 allow_anonymous: true
 plugins:
-  outbound:
-  - type: js-outbound
+  target:
+    type: target-flow
+    namespace: test
     configuration:
-      script: 
-      asdasdsa
+        flow: /test.yaml
 methods: 
   - GET
 path: ep4
