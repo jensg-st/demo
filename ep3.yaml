@@ -8,4 +8,4 @@ plugins:
         flow: /test.yaml
 methods: 
   - GET
-path: ep4
+path: ep3

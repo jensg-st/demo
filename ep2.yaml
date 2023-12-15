@@ -1,12 +1,15 @@
 direktiv_api: endpoint/v1
 allow_anonymous: true
 plugins:
+  inbound: 
+    - type: request-convert
   target:
     type: target-flow
     namespace: test
     configuration:
         flow: /test.yaml
-        namespace: test
 methods: 
+  - OPTION
+  - HEAD
   - GET
 path: ep2
