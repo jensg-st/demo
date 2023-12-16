@@ -1,8 +1,8 @@
 direktiv_api: endpoint/v1
 allow_anonymous: true
 plugins:
-  inbound:
-    - type: github-event
+  auth:
+    - type: github-webhook-auth
       configuration: 
         secret: helloworld
   target:
