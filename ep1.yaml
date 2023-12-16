@@ -1,5 +1,5 @@
 direktiv_api: endpoint/v1
-allow_anonymous: true
+allow_anonymous: false
 plugins:
   auth:
     - type: github-webhook-auth
