@@ -1,3 +1,4 @@
 direktiv_api: filters/v1
-name: filter2
-source: myscript.js
+filters:
+- name: filter2
+  source: myscript.js
