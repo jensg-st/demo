@@ -1,0 +1,24 @@
+direktiv_api: workflow/v1
+description: A simple 'action' state that sends a get request
+functions:
+- id: get
+  image: gcr.io/direktiv/functions/bash:1.0
+  type: knative-workflow
+  patches:
+  - op: add
+    path: /spec/template/metadata/annotations
+    Value: { "jens": "gerke3" }
+  - op: add
+    path: /spec/template/metadata/annotations
+    Value: { "jens": "gerke2" }
+  - op: add
+    path: /spec/template/spec/containers[0]/env
+    Value: { "name": "hello", "value": "world" }
+states:
+- id: getter 
+  type: action
+  action:
+    function: get
+    input: 
+      commands:
+      - command: env

@@ -16,5 +16,5 @@ states:
     input: 
       data:
         commands:
-        - command: 'env'
+        - command: 'echo -n $jens'
 
