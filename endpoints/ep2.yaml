@@ -1,5 +1,7 @@
 direktiv_api: "endpoint/v1"
-path: ""
+path: "/route2"
+methods:
+  - "GET"
 plugins:
   auth:
     - type: "basic-auth"
