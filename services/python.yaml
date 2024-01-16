@@ -2,3 +2,4 @@ direktiv_api: service/v1
 image: python
 cmd: /usr/share/direktiv/direktiv-cmd
 scale: 1
+post_start_exec: ["pip", "install", "httpserver"]
