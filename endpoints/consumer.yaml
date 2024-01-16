@@ -1,0 +1,4 @@
+direktiv_api: "consumer/v1"
+username: "hello"
+password: "world"
+api_key: "apikey"

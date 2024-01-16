@@ -1,0 +1,6 @@
+direktiv_api: workflow/v1
+states:
+- id: getter 
+  type: noop
+  log: jq(.)
+

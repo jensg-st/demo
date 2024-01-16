@@ -1,0 +1,19 @@
+direktiv_api: "endpoint/v1"
+path: ""
+plugins:
+  auth:
+    - type: "basic-auth"
+      configuration:
+        add_username_header: true
+        add_tags_header: false
+        add_groups_header: false
+    - type: "key-auth"
+      configuration:
+        add_username_header: true
+        add_tags_header: true
+        add_groups_header: true
+  target:
+    type: "target-flow"
+    configuration:
+      flow: "/print.yaml"
+      async: false
