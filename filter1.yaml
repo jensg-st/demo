@@ -1,0 +1,18 @@
+direktiv_api: filters/v1
+filters:
+- name: filter1
+  script: |
+    nslog("FILTER SCRIPT")
+    if (event["source"] == "mysource") {
+      nslog("rename source SCRIPT")
+      event["source"] = "newsource"
+    }
+    
+    if (event["source"] == "hello") {
+      nslog("drop me SCRIPT")
+      return null
+    }
+    
+    return event
+
+
