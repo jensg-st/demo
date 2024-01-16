@@ -1,0 +1,20 @@
+
+direktiv_api: workflow/v1
+functions:
+- id: get
+  image: ubuntu   
+  type: knative-workflow
+  cmd: /usr/share/direktiv/direktiv-cmd
+  envs:
+  - name: jens
+    value: gerke
+states:
+- id: getter 
+  type: action
+  action:
+    function: get
+    input: 
+      data:
+        commands:
+        - command: 'env'
+

@@ -4,8 +4,8 @@ plugins:
   outbound:
   - type: js-outbound
     configuration:
-      script: 
-      asdasdsa
+      script: |
+  asdasdsa
 methods: 
   - GET
 path: ep4

@@ -1,0 +1,21 @@
+direktiv_api: workflow/v1
+functions:
+- id: get
+  image: ubuntu   
+  type: knative-workflow
+  cmd: /usr/share/direktiv/direktiv-cmd
+states:
+- id: getter 
+  type: action
+  action:
+    function: get
+    input: 
+      data:
+        commands:
+        - command: 'echo -n hello'
+        - command: this fails
+          stop: false
+        - command: echo my password is THISIS A SECRET
+          suppress_command: true
+          suppress_output: true
+
