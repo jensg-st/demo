@@ -17,6 +17,10 @@ plugins:
   inbound:
   - type: "request-convert"
     configuration:
+        omit_headers: false
+        omit_queries: false
+        omit_body: false
+        omit_consumer: false
   target:
     type: "target-flow"
     configuration:
