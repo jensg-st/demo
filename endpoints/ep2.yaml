@@ -14,6 +14,8 @@ plugins:
         add_username_header: true
         add_tags_header: true
         add_groups_header: true
+  inbound:
+  - type: "request-convert"
   target:
     type: "target-flow"
     configuration:
