@@ -16,6 +16,7 @@ plugins:
         add_groups_header: true
   inbound:
   - type: "request-convert"
+    configuration:
   target:
     type: "target-flow"
     configuration:
