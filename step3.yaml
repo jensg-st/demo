@@ -7,10 +7,7 @@ functions:
   patches:
   - op: add
     path: /spec/template/metadata/annotations
-    Value: { "jens": "gerke3" }
-  - op: add
-    path: /spec/template/metadata/annotations
-    Value: { "jens": "gerke2" }
+    Value: { "jens": "gerke" }
   - op: add
     path: /spec/template/spec/containers[0]/env
     Value: { "name": "hello", "value": "world" }
